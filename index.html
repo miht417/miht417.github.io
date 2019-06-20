@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="zh-CN">
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -83,7 +83,7 @@
 <meta property="og:title" content="苏木麦门冬">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="苏木麦门冬">
-<meta property="og:locale" content="zh-CN">
+<meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="苏木麦门冬">
 
@@ -101,7 +101,7 @@
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     duoshuo: {
       userId: '0',
-      author: 'Author'
+      author: '博主'
     },
     algolia: {
       applicationID: '',
@@ -121,6 +121,7 @@
 
 
 
+<link href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css" rel="stylesheet">
   <title>苏木麦门冬</title>
   
 
@@ -133,7 +134,7 @@
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
   
   
@@ -182,25 +183,79 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            首页
           </a>
         </li>
       
         
-        <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
             
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
             
-            Archives
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
           </a>
         </li>
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
   
 </nav>
 
@@ -234,7 +289,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="苏冬麦">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -258,9 +313,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-06-20T17:41:35+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-20T17:41:35+08:00">
                 2019-06-20
               </time>
             
@@ -278,9 +333,39 @@
 
           
           
+             <span id="/2019/06/20/日常-美好/" class="leancloud_visitors" data-flag-title="日常.美好">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  0
+                </span>
+              
+
+              
+
+              
+            </div>
           
 
           
@@ -300,8 +385,15 @@
       
         
           
-            
           
+          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/06/20/日常-美好/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -314,6 +406,8 @@
     
 
     
+
+
 
     <footer class="post-footer">
       
@@ -348,12 +442,12 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/17/被讨厌的勇气_读书笔记/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/17/《被讨厌的勇气》读书笔记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="苏冬麦">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -367,7 +461,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/06/17/被讨厌的勇气_读书笔记/" itemprop="url">被讨厌的勇气_读书笔记</a></h1>
+                <a class="post-title-link" href="/2019/06/17/《被讨厌的勇气》读书笔记/" itemprop="url">《被讨厌的勇气》读书笔记</a></h1>
         
 
         <div class="post-meta">
@@ -377,9 +471,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-06-17T15:45:04+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-17T15:45:04+08:00">
                 2019-06-17
               </time>
             
@@ -397,9 +491,39 @@
 
           
           
+             <span id="/2019/06/17/《被讨厌的勇气》读书笔记/" class="leancloud_visitors" data-flag-title="《被讨厌的勇气》读书笔记">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2k
+                </span>
+              
+
+              
+
+              
+            </div>
           
 
           
@@ -419,70 +543,17 @@
       
         
           
-            <p>Key words:<br>原因论、目的论<br>善、生活方式、改变、自卑感<br>勇气<br>人际关系：分离课题、归属感、横向关系\共同体感觉<br>循环：自我接纳、他者贡献、他者信赖*</p>
-<h4 id="原因论和目的论"><a href="#原因论和目的论" class="headerlink" title="原因论和目的论"></a><strong>原因论和目的论</strong></h4><ul>
-<li>原因论：现在的我（结果）是由过去的事情（原因）所决定<br>  原因论无助于前进。<br>  如果归于“原因”，那我只能束手无策——因为“原因”我才“目的”。</li>
-</ul>
-<ul>
-<li>目的论：由于不想XXX（目的），所以才制造XXX（结果）<br>  目的论会找到解决困难/问题的出口。<br>  如果归于“目的”，因为不想XX所以才搬出原因，重点就到了不想XX，那就可以针对不想的事情找方法——因为“目的”我才“原因”。</li>
-</ul>
-<p>决定我们自身的不是过去的经历，而是我们自己赋予经历的意义。<br>问题不在于“发生了什么”，而在于“如何诠释”。<br>重要的不是被给予了什么，而是如何去利用被给予的东西。<br>人并不受过去的原因所左右，而是朝着自己定下的目标前进。</p>
-<h4 id="关于“善”"><a href="#关于“善”" class="headerlink" title="关于“善”"></a><strong>关于“善”</strong></h4><p>你在人生的某个阶段里选择了“不幸”。这既不是因为你生在了不幸的环境中，也不是因为你陷入了不幸的境地中，而是因为你认为“不幸”对你自身而言是一种“善”。<br>【这种“善”是指有好处的事。】</p>
-<h4 id="人生的状态"><a href="#人生的状态" class="headerlink" title="人生的状态"></a><strong>人生的状态</strong></h4><p>如何理解人——&gt;性格或秉性——&gt;人生中思考或行为的倾向——&gt;如何看“世界”，如何看“自己”，把这些“赋予意义的方式”汇集起来的概念可以理解为【生活方式】——&gt;狭义指性格，广义指世界观人生观。<br>这些也就是人生的状态，这些都是自己主动选择的结果。</p>
-<h4 id="关于无法改变"><a href="#关于无法改变" class="headerlink" title="关于无法改变"></a><strong>关于无法改变</strong></h4><p>你之所以无法改变，是因为自己下了“不改变”的决心，即使人们有各种不满，但还是认为保持现状更加轻松、更加安心。<br>因为害怕XXX，而让自己做现在的事情。</p>
-<h4 id="两种自卑感"><a href="#两种自卑感" class="headerlink" title="两种自卑感"></a><strong>两种自卑感</strong></h4><ol>
-<li>自卑情结：因为有A所以才做不到B</li>
-<li>优越情结：“又没法忍受因为有A所以才做不到B”的自卑情结，无法接受“无能的自己”，表现得好像自己很优秀，沉浸在一种虚假的优越感中。</li>
-</ol>
-<p>健全的自卑感是来自于与“理想的自己”的比较。</p>
-<p>由人际关系中的竞争产生自卑感——&gt;自卑感导致逃避人际关系——&gt;为了逃避人际关系，有了讨厌某人/某事/某物的目的——&gt;有了目的，就会企图设立种种借口来回避人生课题。</p>
-<p><strong>人生课题</strong>包括：工作课题、交友课题、爱的课题<br>人生课题目标：</p>
-<ul>
-<li>行为方面的目标：1.自立；2.与社会和谐共处</li>
-<li>支撑这种行为的心理方面的目标：1.“我有能力”的意识；2.“人人都是我的伙伴”的意识</li>
-</ul>
-<p>“回避人生课题”既不是善恶问题，也不是道德问题，而是“勇气”的问题。</p>
-<h4 id="关于改变，我们缺的是什么？"><a href="#关于改变，我们缺的是什么？" class="headerlink" title="关于改变，我们缺的是什么？"></a><strong>关于改变，我们缺的是什么？</strong></h4><p>要想改变生活方式需要很大的勇气。<br>你之所以不幸并不是因为过去或环境，更不是因为能力不足，你只不过是缺乏“勇气”，缺乏“获得幸福的勇气”。</p>
-<h4 id="人怎样才能获得勇气？"><a href="#人怎样才能获得勇气？" class="headerlink" title="人怎样才能获得勇气？"></a><strong>人怎样才能获得勇气？</strong></h4><p>通过为共同体也就是他人服务——&gt;体会到“我对别人有用”，不是被别人评价说“很好”——&gt;主观上就能够认为“我能够对他人做出贡献”——&gt;这样我们才能真正体会到自己的价值——&gt;才可以获得勇气</p>
-<h4 id="自由即分离课题"><a href="#自由即分离课题" class="headerlink" title="自由即分离课题"></a><strong>自由即分离课题</strong></h4><ul>
-<li><p>因为赏罚教育的影响，人会寻求别人的认可。<br>  分离自己和别人的“人生课题”。不干涉别人的课题也不让别人干涉自己的课题。<br>  肆意践踏对方好意，受“回报”思想束缚。我们既不可以寻求回报，也不可以受其束缚。</p>
-</li>
-<li><p>自由就是不要害怕被人讨厌。<br>  “不想被人讨厌”是自己的课题；<br>  “是否讨厌我”却是别人的课题，这个我们无法干涉。</p>
-<h4 id="关于归属感"><a href="#关于归属感" class="headerlink" title="关于归属感"></a><strong>关于归属感</strong></h4></li>
-<li><p>作为共同体一员，能够感觉到自己在共同体中有自己的位置并能体会到“可以在这里”，也就是拥有归属感。</p>
-</li>
-<li><p>归属感不是仅仅靠在那里就可以得到的，它必须靠积极地参与到共同体中去才能够得到。<br>  积极的参与就是直面“人生课题”。<br>  如果你认为自己就是世界的中心，那就丝毫不会主动融入共同体中，因为一切他人都是“为我服务的人”，根本没必要由自己采取行动。</p>
-</li>
-<li><p>不是考虑“这个人会给我什么”，而是要必须思考一下“我能给这个人什么”，这就是对共同体的参与和融入。</p>
-</li>
-<li><p>当我们在人际关系中遇到困难或者看不到出口的时候，首先应该考虑的是“倾听更大共同体的声音”这一原因。</p>
-</li>
-</ul>
-<h4 id="如何才能形成相互协调与合作的关系？"><a href="#如何才能形成相互协调与合作的关系？" class="headerlink" title="如何才能形成相互协调与合作的关系？"></a><strong>如何才能形成相互协调与合作的关系？</strong></h4><p>发展“横向关系”，即“虽不同但平等”的关系。<br>其中要点：</p>
-<ul>
-<li><p>不可以批评也不可以表扬<br>  表扬这种行为含有“有能力者对没能力者所做的评价”。<br>  人会因为被表扬而形成“自己没能力”的信念。</p>
-</li>
-<li><p>做一些不是干涉的“援助”，即“鼓励”<br>  如何鼓励？最重要的是不“评价”他人，表达感谢、尊敬或喜悦</p>
-</li>
-<li><p>不要用“行为”标准，而是用“存在”标准去看待他人。<br>  缺乏“人生和谐”的生活方式，是一种只凭事物的一部分就来判断整体的，只用“行为标准”来认可人的价值。应该按照“存在标准”来接受认可自己和他人。</p>
-</li>
-</ul>
-<h4 id="共同体感觉"><a href="#共同体感觉" class="headerlink" title="共同体感觉"></a><strong>共同体感觉</strong></h4><p>人际关系的终极目标就是“共同体感觉”。<br>共同体感觉：把他人看作伙伴并能够从中感到“自己有位置”的状态。</p>
-<p>怎么做？ 即把对自己的执着转换成对他人的关心，建立起共同体感觉。</p>
-<p>具体需要从以下三点做起：</p>
-<ol>
-<li><p>自我接纳：<br> 假如做不到就接受做不到的自己，然后尽量朝着能做到的方向去努力<br> 分清“能改变的”和“不能改变的”<br> 接受不能更换的事物，关于可以改变的事情，拿出改变的“勇气”</p>
-</li>
-<li><p>他者信赖：指在相信他人的时候不附加任何条件<br> 通过自我接纳和他者信赖，和他人发展成伙伴关系。</p>
-</li>
-<li><p>他者贡献：指对作为伙伴的他人给予影响，做出贡献<br> 他者贡献是为了能够体会到“我”的价值采取的一种手段。<br> 我们应思考我能为他人做什么，并积极加以实践。<br> 他者贡献也可以是看不见的贡献，只要能够产生“我对他人有用”的主观感受，即“贡献感”也可以。</p>
-</li>
-</ol>
-<h4 id="循环"><a href="#循环" class="headerlink" title="循环"></a><strong>循环</strong></h4><p>人际关系始于“分离课题”，终于“共同体感觉”。</p>
-<p>只要有了共同体感觉，才能获得贡献感。意思是在自我接纳，他者贡献之后产生伙伴关系，有了对他人的关心，就会了解他人的需求，从而做到他者贡献，再从贡献中更加接纳自我。</p>
-<p><strong>自我接纳</strong>，接受真实的自我，才能不惧背叛做到<strong>他者信赖</strong>，对他人无条件的信赖才能视他人为自己的伙伴，才能做到<strong>他者贡献</strong>，对他人有所贡献才能体会到“我对他人有用”，才能够更加<strong>接纳自我</strong>。</p>
-
-          
+          Key words:原因论、目的论善、生活方式、改变、自卑感勇气人际关系：分离课题、归属感、横向关系\共同体感觉循环：自我接纳、他者贡献、他者信赖*
+原因论和目的论
+原因论：现在的我（结果）是由过去的事情（原因）所决定  原因论无助于前进。  如果归于“原因”，那我只能束手无策——因为“原因”我才“
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/06/17/《被讨厌的勇气》读书笔记/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -495,6 +566,8 @@
     
 
     
+
+
 
     <footer class="post-footer">
       
@@ -529,12 +602,12 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/28/《习惯的力量》读书笔记-1/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/28/《习惯的力量》读书笔记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="苏冬麦">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -548,7 +621,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/04/28/《习惯的力量》读书笔记-1/" itemprop="url">习惯的力量_读书笔记</a></h1>
+                <a class="post-title-link" href="/2019/04/28/《习惯的力量》读书笔记/" itemprop="url">《习惯的力量》读书笔记</a></h1>
         
 
         <div class="post-meta">
@@ -558,9 +631,9 @@
                 <i class="fa fa-calendar-o"></i>
               </span>
               
-                <span class="post-meta-item-text">Posted on</span>
+                <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-04-28T19:51:32+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-28T19:51:32+08:00">
                 2019-04-28
               </time>
             
@@ -578,9 +651,39 @@
 
           
           
+             <span id="/2019/04/28/《习惯的力量》读书笔记/" class="leancloud_visitors" data-flag-title="《习惯的力量》读书笔记">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
           
 
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  4.6k
+                </span>
+              
+
+              
+
+              
+            </div>
           
 
           
@@ -600,37 +703,15 @@
       
         
           
-            <p>本书每一章都从不同的角度为读者解释了习惯存在的原因以及习惯的运作方式。本附录中提到的理解框架试图从非常基本的角度，提炼研究人员找到的，用来分析并改变我们生活中各种习惯的方法。本书并不想做到无所不包，只是提供一个实践指导，一个开端。配合本书各章节更加深入的内容，这本书就是告诉你今后该如何做的指南。<br>改变可能不会很快，而且并不总是容易。但只要付出时间和努力，几乎所有的习惯都是可以改变的。<br>理解框架：</p>
-<p>找出惯常行为<br>用各种奖赏进行试验<br>将暗示隔离出来<br>制订计划</p>
-<h3 id="第一步：找出惯常行为"><a href="#第一步：找出惯常行为" class="headerlink" title="第一步：找出惯常行为"></a>第一步：找出惯常行为</h3><p>在每种习惯中有一种简单的神经逻辑回路，这种回路包含三部分：暗示、惯常行为和奖赏。</p>
-<p><img src="《习惯的力量》读书笔记/a.jpg" alt=""></p>
-<p>要了解自己的习惯，你得找到回路的各个部分。一旦发现行为中存在的习惯回路，你就能想办法用新的惯常行为取代旧的坏习惯。</p>
-<p>比如你有一个坏习惯，就像我为撰写本书做研究时的习惯一样，喜欢每天下午去咖啡厅买巧克力豆饼干。假设这个习惯让你胖了几磅，或者说这个习惯实际上让你胖了8磅，然后你妻子针对你的体重说了一些让你不爽的话。于是你总是强迫自己停止吃饼干，但徒劳无益，你觉得很累，你甚至还在电脑上贴了即时贴，写着再也不吃饼干了。但是每天下午你都会当这张即时贴不存在，照样晃悠着去咖啡厅，然后买饼干，接着在收银台附近与同事闲聊时就开始吃。吃的时候感觉很好，吃完就难受了。你跟自己发誓，说你明天会用全部的意志力来抵制饼干的诱惑，明天会是新的一天。<br>不过第二天这个习惯照旧。</p>
-<p>你怎样开始分析，然后改变自己的行为呢？<br>就是要弄清楚自己的习惯回路。第一步是找出自己的惯常行为。饼干的案例和大部分习惯一样，其中的惯常行为几乎是最明显的，是你想要改变的行为。你的惯常行为是下午从桌子旁起来，走到咖啡厅，买巧克力豆饼干，然后在和朋友聊天的时候吃，那么这就是你加入到习惯回路中的东西。</p>
-<p><img src="《习惯的力量》读书笔记/b.jpg" alt=""></p>
-<p>接着，还有一些较为隐蔽的问题：这一惯常行为的暗示是什么？是饥饿吗？是无聊吗？是因为低血糖？还是说你在全身心投入到下一件工作前，需要休息下，而吃饼干就是休息的一种方式？<br>那么奖赏是什么？是饼干吗？还是换了环境？或者是暂时散散心？又或者是与同事聊天？也有可能通过突然摄入那么多糖获得了能量充沛的感觉?<br>要弄清楚究竟怎么回事，你需要做点儿实验。</p>
-<h3 id="第二步：用奖赏做实验"><a href="#第二步：用奖赏做实验" class="headerlink" title="第二步：用奖赏做实验"></a>第二步：用奖赏做实验</h3><p>奖赏的影响力很大，因为它们能满足人的渴求感。但人往往意识不到在背后驱动我们行为的渴求。比如，营销团队发现消费者在每次例行清洁后需要新鲜的气味，他们找到了一种任何人都不曾意识到的渴求。其中的奥秘就在眼前。回想一下，就会发现大多数渴求都非常明显，但我们就在它们面前却视而不见，这实在令人难以置信。<br>为了确定是哪些渴求在驱动习惯，就要用不同的奖赏做实验。这也许会花几天、一周或者更长的时间。在这段时间里，你在做出切实的改变时不应该感到任何压力，把自己想象成数据收集阶段的科学家就行。</p>
-<p>在实验的第一天，你会非常想去咖啡厅买饼干，那么你得调整一下你的惯常行为，这样会得到不同的奖赏。比如，你没有去咖啡厅，而是在社区附近散步，然后回到办公桌前，什么也没吃。<br>第二天，你去咖啡厅买了个甜甜圈，或者糖果条，然后回桌子那儿吃。<br>第三天，你去了咖啡厅，买了个苹果，然后和朋友聊天时吃了。<br>接着，你试着改成麦咖啡，然后你都不去咖啡厅了，而是到朋友的办公室闲聊几分钟，然后回去工作。</p>
-<p>这下你应该懂了。你选择用什么行为取代买饼干并不重要，重要的是要测试各种假设，确定哪种渴求在驱动你的惯常行为。</p>
-<p>你是因为渴求饼干本身，还是想休息一下再工作？<br>如果是饼干本身，那是因为你饿了吗？（如果是这样，苹果应该也可以满足你。）<br>或者是因为你需要饼干提供的能量？（如果是这样，咖啡应该可以满足你。）<br>或者，你走去咖啡厅是因为你想找人闲聊，而饼干不过是个比较好的借口？（要是这样，走到别人办公桌前，和对方闲聊几分钟，应该能满足你的冲动。）</p>
-<p>等你试了4~5个不同的奖赏后，你就可以用老办法寻找其中的规律：每次活动之后，拿支笔在纸上写下你一回到桌前就想到的头三样东西。可以是你的情绪或者思维，或者写下对自己感觉的想法，要么就写出头三个你想到的词。</p>
-<p><img src="《习惯的力量》读书笔记/c.jpg" alt=""></p>
-<p>然后，在手表或电脑上设个15分钟后就响的闹钟。等到闹钟响了，你就问自己是否还有吃饼干的冲动。写下三样东西很重要，就算写下的词毫无意义，你也要写，原因有两个。其一，这样做会迫使你此刻意识到自己在想什么或者感觉如何。其二，研究表明，写几个单词有助于你今后回忆起自己当时在想什么。在实验结束时，如果你回顾自己的笔记，就能很容易记起自己当时的所思所想，在那一刻究竟是什么感觉。因为你写下的东西会帮助你进行全面的回忆。<br>那为什么闹钟设的时间是15分钟后呢？因为这些测试的重点是找出你渴求的奖赏是什么。如果吃掉甜甜圈15分钟后，你还是有冲动起身去咖啡厅，那驱动你习惯的就不是对糖的渴求。如果在和同事闲聊之后，你还是想吃饼干，那么与人接触的需求就不是你吃饼干行为的诱因。<br>从另一个角度看，如果和朋友聊天的15分钟后，你发现自己可以轻松地回去工作，那么你就找到了习惯回路中的奖赏，也就是临时散散心，和人聊聊天。这就是你的习惯想要满足的东西。<br>通过用不同的奖赏进行试验，你可以将你实际渴求的对象分隔出来，这就是重塑习惯最基本的要素。</p>
-<p><img src="《习惯的力量》读书笔记/d.jpg" alt=""></p>
-<p>一旦你找出惯常行为和奖赏，剩下要做的就是找到暗示了。</p>
-<h3 id="第三步：分隔出暗示"><a href="#第三步：分隔出暗示" class="headerlink" title="第三步：分隔出暗示"></a>第三步：分隔出暗示</h3><p>一直以来，有一个问题困扰了社会学家很多年，即为什么有些罪行的目击者会混淆自己目击的内容，而其他人可以准确地回忆起事件的经过？大约10年前，西安大略大学的一位心理学家试图找到该问题的答案。<br>当然，目击者的回忆至关重要。然而，很多研究表明，目击者往往会混淆自己看到的情形。比如他们坚持说小偷是男性，而嫌疑犯却是穿着裙子的女性。或者甚至在警方的报告都说案发时间是下午两点时，目击者依然声称案发时间是在黄昏。而其他目击者却可以清楚地记得看到的罪案的经过，回忆时能够近乎完美地描述整个过程。<br>针对该现象，研究人员做了很多研究，试图确定为什么有些目击者能记得更清楚。研究人员的结论很简单，就是有些人的记忆力更好，或者罪案发生的地方是这些目击者熟悉的地方，他们因而更容易回忆起事件的经过。但是这些结论并不能经得起检验。不管目击者的记忆力如何，或者对案发现场有多熟悉，他们都有可能出现混乱的回忆。<br>西安大略大学的这位心理学家采用了不同的方法。她猜想之前的研究人员是否错误地把注意力都放到了讯问方与目击者的说辞上，而忽略了他们是怎么说的。她怀疑在整个过程中存在一些微妙的暗示在影响着整个讯问过程。但当她看了一堆讯问目击者的录像带后，她没能从中找到任何这种暗示。每一场讯问活动的细节太多了，有面部表情，各种问题被提出的方式也不同，还有双方情绪的波动，她没法从这么多细节中找到任何规律。<br>所以她有了一个主意，要列出一串自己会关注的要素，比如讯问方的语调，目击者的面部表情，双方座位的距离。然后她把所有会影响她关注这些要素的信息全部剔除。比如她关小了电视机的声音，这样就不会去关注具体的内容，只会专注讯问方的语调。她还用纸把屏幕上讯问方的脸贴起来，这样就只会看到目击者的面部表情。她还拿了一盒带子当尺子，在屏幕上量双方之间的距离。<br>她一开始研究这些要素后，其中的规律模式就呈现在眼前。她发现，如果目击者有关案发经过的记忆混乱，那么讯问目击者的警察在问话时通常都语调柔和而友好。如果目击者展露了更多笑容，或者坐得离问话的警察更近，那记忆混淆的可能性会更大。<br>换句话说，当环境中的暗示表明“我们是朋友”时，目击者就更有可能混淆记忆中发生的事，而这种暗示有可能是柔和的语调或者微笑的表情。也许原因是从潜意识上，这些友好的暗示在目击者身上诱发了一种取悦讯问者的习惯。<br>但是，这一实验的重点是有很多其他研究人员都看过了同一批录像带，许多聪明的人都看过了同样的行为模式，但是之前谁都没有把它们挑出来。因为每一盒带子的信息量太大，很难让人看到其中微妙的暗示。<br>不过，在这位心理学家决定只关注三大类行为，并将其他无关的信息剔除掉之后，其中的规律就显而易见了。</p>
-<p>我们的生活大同小异。之所以很难发现诱发人习惯的暗示，原因在于我们的行为包含了太多的信息量，远远超过了我们的处理能力。问问你自己，你每天早上定时吃早餐是因为你饿了吗？还是因为时钟显示已到7点半？或者因为你的孩子们已经开始吃早餐了？又或者因为你穿好了衣服，而这个动作完成后，吃早餐的习惯就出现了？<br>是什么让你开车上班时自动将车左转？是因为街上的行车标志吗？还是某棵树？还是说，实际上是因为你知道这条路方向是对的？也许是上面所有因素加在一起让你左转？你送孩子去学校，结果发现自己无意识地开上了上班的那条路，而不是去学校的路，那是什么让你犯了这个错误？是什么暗示让你此时选择了“开车上班”这一习惯，而不是“开车去学校”的习惯呢？<br>我们可以使用那位心理学家采用的同样体系从大量的信息中找出暗示：事先定好有哪几类行为需要注意，以便让你发现其中的规律。幸运的是，科学在这方面帮了我们的忙。很多实验显示，几乎所有的习惯性暗示都可以归为以下五大类中的一类：<br>· 地点<br>· 时间<br>· 情绪状态<br>· 其他人<br>· 之前紧挨着的动作</p>
-<p>所以如果你想找到“去咖啡厅并买巧克力豆饼干”这个习惯的暗示，那请在这一冲动出现时写下5样东西（下面这些是我在分析自己的习惯时做的笔记）：<br>你在哪？（坐在我的办工桌前）<br>现在几点？（下午3点36分）<br>你的情绪怎样？（觉得无聊）<br>周围有谁？（空无一人）<br>在买饼干的冲动之前，你做了什么？（我回复了一封电子邮件）</p>
-<p>第二天：<br>你在哪？（从复印机那儿往回走）<br>现在几点？（下午3点18分）<br>你的情绪怎样？（觉得开心）<br>周围有谁？（体育部的吉姆）<br>在买饼干的冲动之前，你做了什么？（我复印了一份东西）</p>
-<p>第三天：<br>你在哪？（会议室）<br>现在几点？（下午3点41分）<br>你的情绪怎样？（累，对自己正在做的项目感到激动）<br>周围有谁？（其他来开会的编辑）<br>在买饼干的冲动之前，你做了什么？（我坐了下来，因为会议要开始了）</p>
-<p>有这三天的记录，已经可以清楚地看到是什么暗示诱发了我买饼干的习惯，让我每天在固定的时间有吃零食的冲动。在第二步我就发现我有这个习惯并不是因为饿。我找寻的奖赏是暂时散散心，也就是通过与朋友闲聊得到消遣。我现在知道这一习惯诱发的时间是在下午3点到4点之间。</p>
-<p><img src="《习惯的力量》读书笔记/e.jpg" alt=""></p>
-<h3 id="第四步：制订计划"><a href="#第四步：制订计划" class="headerlink" title="第四步：制订计划"></a>第四步：制订计划</h3><p>一旦你发现了你的习惯回路，你就找到了驱动你行为的奖赏、诱发你习惯的暗示以及惯常行为本身，这样你就可以开始改变你的行为了。通过围绕暗示设计，选择能够满足你所渴求的奖赏的行为，你就可以改善你的习惯。你需要的是一个计划。在前言中，我们了解到习惯是一种在特定的时间，你会做出的选择，然后你便不会再去想，却会日复一日地重复它。<br>换句话说，习惯是大脑自动遵循的行为模式，也就是我看到暗示时，我会做出惯常行为，目的是要得到奖赏。为了调整这个模式，我们需要重新进行选择。许多研究表明，这样做最容易的方式是制订计划。在心理学里中，这些计划被称为“执行意图”。<br>比如，拿我在下午买饼干的习惯作为例子，通过这个框架，我发现我的暗示一般大约出现在下午的3点半。我知道我的惯常行为是去咖啡厅买饼干，同时还与朋友聊天。通过实验，我发现我渴求的并不是饼干本身，而是那一小段时间的悠闲以及与别人交往的机会。</p>
-<p>于是我为自己制订了计划：<br>每天下午3点半，我会到朋友的办公室和他聊上10分钟。<br>为了确保我记得这样做，我在手表上设了下午3点半的闹钟。<br>这样做并没有立刻收到效果。我有时候太忙了，都忘记自己设了闹钟，然后旧瘾复发。其他时候好像是工作太多，要找个愿意跟你聊的朋友很难，而买饼干很简单，于是我又在冲动面前投降了。但在我按照自己的计划行事的日子里，每次闹钟一响，我就强迫自己走到朋友办公桌那和他聊上10分钟，我发现我每天工作结束时感觉更舒坦了。我没去咖啡厅，也没有吃饼干，而我依然感觉良好。最终，这变成了自发行为：每次闹钟一响，我就去找朋友，然后每天结束时，内心都有一种细微但是真实的成就感。几个星期以后，我不再去想自己的这种惯常行为了。等到我找不到人可以聊天时，我就去咖啡厅，和在那里的朋友们一起喝茶。<br>这一切都发生在6个月之前。我现在都不戴表了，因为丢了。但是，每天下午的3点半，我依然不知不觉地站起来，看看新闻编辑室里谁有时间可以和我闲谈，花10分钟时间聊聊新闻，然后回去工作。现在这一切都是在我不假思索的情况下发生的，这已经变成了一种习惯。</p>
-<p><img src="《习惯的力量》读书笔记/f.jpg" alt=""></p>
-<p>显然，改变某些习惯很难，但是这个框架是一个好的开端。有时候改变习惯要花很长的时间，有时候会经历反复的实验与失败。不过，一旦你弄清楚了习惯背后的机理，也就是你能够分析出暗示、惯常行为和奖赏时，你就有了超越习惯的力量。</p>
-
-          
+          本书每一章都从不同的角度为读者解释了习惯存在的原因以及习惯的运作方式。本附录中提到的理解框架试图从非常基本的角度，提炼研究人员找到的，用来分析并改变我们生活中各种习惯的方法。本书并不想做到无所不包，只是提供一个实践指导，一个开端。配合本书各章节更加深入的内容，这本书就是告诉你今后该如何做的指南。改变
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/04/28/《习惯的力量》读书笔记/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -643,6 +724,8 @@
     
 
     
+
+
 
     <footer class="post-footer">
       
@@ -699,6 +782,10 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/images/avatar.jpg"
+                alt="苏冬麦" />
+            
               <p class="site-author-name" itemprop="name">苏冬麦</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
@@ -708,10 +795,10 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/">
+                <a href="/archives">
               
                   <span class="site-state-item-count">3</span>
-                  <span class="site-state-item-name">posts</span>
+                  <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
@@ -722,10 +809,10 @@
               
               
               <div class="site-state-item site-state-tags">
-                
+                <a href="/tags/index.html">
                   <span class="site-state-item-count">1</span>
-                  <span class="site-state-item-name">tags</span>
-                
+                  <span class="site-state-item-name">标签</span>
+                </a>
               </div>
             
 
@@ -767,10 +854,19 @@
   <span class="author" itemprop="copyrightHolder">苏冬麦</span>
 
   
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+      <span class="post-meta-item-text">Site words total count&#58;</span>
+    
+    <span title="Site words total count">6.6k</span>
+  
 </div>
 
 
-  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
 
 
 
@@ -778,7 +874,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
 
 
 
@@ -827,6 +923,9 @@
 
 
 
+  
+  
+
 
 
 
@@ -863,6 +962,16 @@
   
   
     <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/three/three-waves.min.js"></script>
   
 
 
@@ -929,11 +1038,435 @@
 
   
 
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
 
 
 
 
   
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("", "");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
 
   
 
